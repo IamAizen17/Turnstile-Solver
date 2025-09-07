@@ -18,6 +18,7 @@ WORKDIR /app
 COPY . /app
 
 # Install Python dependencies
+RUN pip install -r requirements.txt
 RUN pip install --no-cache-dir --upgrade pip \
     && pip install --no-cache-dir \
         fastapi \
